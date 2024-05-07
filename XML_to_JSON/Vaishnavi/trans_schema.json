@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "orders": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "customer_ordered": {
+                        "type": "object",
+                        "properties": {
+                            "c": {
+                                "type": "string"
+                            },
+                            "order_date": {
+                                "type": "string"
+                            },
+                            "status": {
+                                "type": "string"
+                            },
+                            "items": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "m": {
+                                            "type": "string"
+                                        },
+                                        "quantity": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": ["m", "quantity"]
+                                }
+                            }
+                        },
+                        "required": ["c", "order_date", "status", "items"]
+                    }
+                },
+                "required": ["id", "customer_ordered"]
+            }
+        }
+    },
+    "required": ["orders"]
+}

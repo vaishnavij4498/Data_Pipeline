@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://mynamespace.fr/myvocabulary#"
+    xmlns:gf="http://mynamespace.fr/myvocabulary#"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xs:element name="MENUS" type="gf:menusType" />
+    <xs:element name="MENU" type="gf:menuType" />
+    <xs:element name="MENU_NAME" type="xs:string" />
+    <xs:element name="DESCRIPTION" type="xs:string" />
+    <xs:element name="INGREDIENTS" type="gf:ingridientsType" />
+    <xs:element name="INGREDIENT" type="xs:string" />
+    <xs:element name="METHODS" type="gf:methodsType" />
+    <xs:element name="METHOD" type="gf:methodType" />
+    <xs:element name="PRICE" type="xs:float" />
+
+    <xs:element name="GOOD_FOOD">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="gf:MENUS" maxOccurs="1" />
+                <xs:element ref="gf:CUSTOMERS" maxOccurs="1" />
+                <xs:element ref="gf:ORDERS" maxOccurs="1" />
+                <xs:element ref="gf:DELIVERY_PEOPLE" maxOccurs="1" />
+                <xs:element ref="gf:DELIVERY_ORDERS" maxOccurs="1" />
+                <xs:element ref="gf:MENU_RATINGS" maxOccurs="1" />
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:key name="keyMenu">
+            <xs:selector xpath="gf:MENUS/gf:MENU" />
+            <xs:field xpath="@id" />
+        </xs:key>
+        <xs:keyref name="refOrderItem" refer="gf:keyMenu">
+            <xs:selector xpath="gf:ORDERS/gf:ORDER/gf:CUSTOMER_ORDERED/gf:ITEMS/gf:ITEMS" />
+            <xs:field xpath="@m" />
+        </xs:keyref>
+        <xs:keyref name="refRatedMenu" refer="gf:keyMenu">
+            <xs:selector xpath="gf:MENU_RATINGS/gf:MENU_RATING/gf:DELIVERY/gf:RATED_MENU" />
+            <xs:field xpath="@m" />
+        </xs:keyref>
+
+        <xs:key name="keyCust">
+            <xs:selector xpath="gf:CUSTOMERS/gf:CUSTOMER" />
+            <xs:field xpath="@id" />
+        </xs:key>
+        <xs:keyref name="refOrderCust" refer="gf:keyCust">
+            <xs:selector xpath="gf:ORDERS/gf:ORDER/gf:CUSTOMER_ORDERED" />
+            <xs:field xpath="@c" />
+        </xs:keyref>
+
+        <xs:key name="keyOrder">
+            <xs:selector xpath="gf:ORDERS/gf:ORDER" />
+            <xs:field xpath="@id" />
+        </xs:key>
+        <xs:keyref name="refOrderDelivered" refer="gf:keyOrder">
+            <xs:selector xpath="gf:DELIVERY_ORDERS/gf:DELIVERY_ORDER/gf:ORDER_DELIVERED" />
+            <xs:field xpath="@o" />
+        </xs:keyref>
+
+        <xs:key name="keyDeliveryPerson">
+            <xs:selector xpath="gf:DELIVERY_PEOPLE/gf:DELIVERY_PERSON" />
+            <xs:field xpath="@id" />
+        </xs:key>
+        <xs:keyref name="refCourir" refer="gf:keyDeliveryPerson">
+            <xs:selector xpath="gf:DELIVERY_ORDERS/gf:DELIVERY_ORDER/gf:ORDER_DELIVERED" />
+            <xs:field xpath="@dp" />
+        </xs:keyref>
+
+        <xs:key name="keyDeliveryOrder">
+            <xs:selector xpath="gf:DELIVERY_ORDERS/gf:DELIVERY_ORDER" />
+            <xs:field xpath="@id" />
+        </xs:key>
+        <xs:keyref name="refDeiveryRated" refer="gf:keyDeliveryOrder">
+            <xs:selector xpath="gf:MENU_RATINGS/gf:MENU_RATING/gf:DELIVERY" />
+            <xs:field xpath="@do" />
+        </xs:keyref>
+
+        <xs:key name="keyMenuRatings">
+            <xs:selector xpath="gf:MENU_RATINGS/gf:MENU_RATING" />
+            <xs:field xpath="@id" />
+        </xs:key>
+
+    </xs:element>
+
+    <xs:complexType name="menusType">
+        <xs:sequence>
+            <xs:element ref="gf:MENU" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="menuType">
+        <xs:sequence>
+            <xs:element ref="gf:MENU_NAME" maxOccurs="1" />
+            <xs:element ref="gf:DESCRIPTION" maxOccurs="1" />
+            <xs:element ref="gf:INGREDIENTS" maxOccurs="1" />
+            <xs:element ref="gf:METHODS" maxOccurs="1" />
+            <xs:element ref="gf:PRICE" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="id" use="required" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:complexType name="ingridientsType">
+        <xs:sequence>
+            <xs:element ref="gf:INGREDIENT" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="methodsType">
+        <xs:sequence>
+            <xs:element ref="gf:METHOD" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="methodType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="step" type="xs:integer" use="required" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:element name="CUSTOMERS" type="gf:customersType" />
+    <xs:element name="CUSTOMER" type="gf:customerType" />
+    <xs:element name="CUSTOMER_FNAME" type="xs:string" />
+    <xs:element name="CUSTOMER_LNAME" type="xs:string" />
+    <xs:element name="CUSTOMER_PHONE" type="xs:string" />
+    <xs:element name="CUSTOMER_ADDRESS" type="xs:string" />
+
+    <xs:complexType name="customersType">
+        <xs:sequence>
+            <xs:element ref="gf:CUSTOMER" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="customerType">
+        <xs:sequence>
+            <xs:element ref="gf:CUSTOMER_FNAME" maxOccurs="1" />
+            <xs:element ref="gf:CUSTOMER_LNAME" maxOccurs="1" />
+            <xs:element ref="gf:CUSTOMER_PHONE" maxOccurs="1" />
+            <xs:element ref="gf:CUSTOMER_ADDRESS" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="id" use="required" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:element name="ORDERS" type="gf:ordersType" />
+    <xs:element name="ORDER" type="gf:orderType" />
+    <xs:element name="CUSTOMER_ORDERED" type="gf:customerOrderedType" />
+    <xs:element name="ORDER_DATE" type="xs:date" />
+    <xs:element name="ORDER_STATUS" type="xs:string" />
+    <xs:element name="ITEMS" type="gf:itemsType" />
+    <xs:element name="ITEM" type="gf:itemType" />
+    <xs:element name="ORDER_QUANTITY" type="xs:int" />
+
+    <xs:complexType name="ordersType">
+        <xs:sequence>
+            <xs:element ref="gf:ORDER" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="orderType">
+        <xs:sequence>
+            <xs:element ref="gf:CUSTOMER_ORDERED" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="id" use="required" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:complexType name="customerOrderedType">
+        <xs:sequence>
+            <xs:element ref="gf:ORDER_DATE" maxOccurs="1" />
+            <xs:element ref="gf:ORDER_STATUS" maxOccurs="1" />
+            <xs:element ref="gf:ITEMS" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="c" use="required" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:complexType name="itemsType">
+        <xs:sequence>
+            <xs:element ref="gf:ITEM" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="itemType">
+        <xs:sequence>
+            <xs:element ref="gf:ORDER_QUANTITY" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="m" use="required" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:element name="DELIVERY_PEOPLE" type="gf:deliveryPeopleType" />
+    <xs:element name="DELIVERY_PERSON" type="gf:deliveryPersonType" />
+    <xs:element name="DELIVERY_PERSON_FNAME" type="xs:string" />
+    <xs:element name="DELIVERY_PERSON_LNAME" type="xs:string" />
+    <xs:element name="DELIVERY_PERSON_PHONE" type="xs:string" />
+
+    <xs:complexType name="deliveryPeopleType">
+        <xs:sequence>
+            <xs:element ref="gf:DELIVERY_PERSON" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="deliveryPersonType">
+        <xs:sequence>
+            <xs:element ref="gf:DELIVERY_PERSON_FNAME" maxOccurs="1" />
+            <xs:element ref="gf:DELIVERY_PERSON_LNAME" maxOccurs="1" />
+            <xs:element ref="gf:DELIVERY_PERSON_PHONE" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="id" use="required" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:element name="DELIVERY_ORDERS" type="gf:deliveryOrdersType" />
+    <xs:element name="DELIVERY_ORDER" type="gf:deliveryOrderType" />
+    <xs:element name="ORDER_DELIVERED" type="gf:orderDeliveredType" />
+    <xs:element name="COURIR" type="gf:courirType" />
+    <xs:element name="DELIVERY_STATUS" type="xs:string" />
+
+    <xs:complexType name="deliveryOrdersType">
+        <xs:sequence>
+            <xs:element ref="gf:DELIVERY_ORDER" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="deliveryOrderType">
+        <xs:sequence>
+            <xs:element ref="gf:ORDER_DELIVERED" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="id" use="required" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:complexType name="orderDeliveredType">
+        <xs:sequence>
+            <xs:element ref="gf:COURIR" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="o" use="required" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:complexType name="courirType">
+        <xs:sequence>
+            <xs:element ref="gf:DELIVERY_STATUS" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="dp" use="required" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:element name="MENU_RATINGS" type="gf:menuRatingsType" />
+    <xs:element name="MENU_RATING" type="gf:menuRatingType" />
+    <xs:element name="DELIVERY" type="gf:deliveryType" />
+    <xs:element name="RATED_MENU" type="gf:ratedMenuType" />
+
+    <xs:complexType name="menuRatingsType">
+        <xs:sequence>
+            <xs:element ref="gf:MENU_RATING" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="menuRatingType">
+        <xs:sequence>
+            <xs:element ref="gf:DELIVERY" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="id" use="required" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:complexType name="deliveryType">
+        <xs:sequence>
+            <xs:element ref="gf:RATED_MENU" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="do" use="required" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:complexType name="ratedMenuType">
+        <xs:simpleContent>
+            <xs:extension base="xs:float">
+                <xs:attribute name="m" type="xs:integer" use="required" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+</xs:schema>

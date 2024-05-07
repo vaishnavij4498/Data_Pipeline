@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "@schemaLocation": {
+      "type": "string",
+      "format": "uri"
+    },
+    "ORDERS": {
+      "type": "object",
+      "properties": {
+        "ORDER": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "@id": {
+                "type": "string"
+              },
+              "CUSTOMER_ORDERED": {
+                "type": "object",
+                "properties": {
+                  "@c": {
+                    "type": "string"
+                  },
+                  "ORDER_DATE": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "ORDER_STATUS": {
+                    "type": "string"
+                  },
+                  "ITEMS": {
+                    "type": "object",
+                    "properties": {
+                      "ITEM": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "@m": {
+                              "type": "string"
+                            },
+                            "ORDER_QUANTITY": {
+                              "type": "string"
+                            }
+                          },
+                          "required": ["@m", "ORDER_QUANTITY"]
+                        }
+                      }
+                    },
+                    "required": ["ITEM"]
+                  }
+                },
+                "required": ["@c", "ORDER_DATE", "ORDER_STATUS", "ITEMS"]
+              }
+            },
+            "required": ["@id", "CUSTOMER_ORDERED"]
+          }
+        }
+      },
+      "required": ["ORDER"]
+    }
+  },
+  "required": ["@schemaLocation", "ORDERS"]
+}

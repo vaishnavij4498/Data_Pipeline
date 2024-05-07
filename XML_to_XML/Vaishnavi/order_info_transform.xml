@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gf:GOOD_FOOD
+    xmlns:gf="http://mynamespace.fr/myvocabulary#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://mynamespace.fr/myvocabulary# good_food_schema.xsd">
+    <gf:ORDERS>
+        <gf:ORDER ondate="2023-01-01">
+            <gf:CUSTOMER_ORDERED c="3">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="2">
+                        <gf:ORDER_QUANTITY>7</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                    <gf:ITEM m="5">
+                        <gf:ORDER_QUANTITY>3</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-02">
+            <gf:CUSTOMER_ORDERED c="1">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="1">
+                        <gf:ORDER_QUANTITY>8</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-03">
+            <gf:CUSTOMER_ORDERED c="5">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="3">
+                        <gf:ORDER_QUANTITY>5</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-04">
+            <gf:CUSTOMER_ORDERED c="2">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="2">
+                        <gf:ORDER_QUANTITY>7</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-05">
+            <gf:CUSTOMER_ORDERED c="4">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="1">
+                        <gf:ORDER_QUANTITY>10</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-06">
+            <gf:CUSTOMER_ORDERED c="7">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="3">
+                        <gf:ORDER_QUANTITY>4</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-07">
+            <gf:CUSTOMER_ORDERED c="1">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="4">
+                        <gf:ORDER_QUANTITY>3</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-08">
+            <gf:CUSTOMER_ORDERED c="3">
+                <gf:ORDER_STATUS>Cancelled</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="2">
+                        <gf:ORDER_QUANTITY>8</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-09">
+            <gf:CUSTOMER_ORDERED c="6">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="5">
+                        <gf:ORDER_QUANTITY>6</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-10">
+            <gf:CUSTOMER_ORDERED c="2">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="2">
+                        <gf:ORDER_QUANTITY>7</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-11">
+            <gf:CUSTOMER_ORDERED c="5">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="3">
+                        <gf:ORDER_QUANTITY>5</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-12">
+            <gf:CUSTOMER_ORDERED c="4">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="1">
+                        <gf:ORDER_QUANTITY>8</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-13">
+            <gf:CUSTOMER_ORDERED c="7">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="3">
+                        <gf:ORDER_QUANTITY>4</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-14">
+            <gf:CUSTOMER_ORDERED c="1">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="4">
+                        <gf:ORDER_QUANTITY>3</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-15">
+            <gf:CUSTOMER_ORDERED c="3">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="2">
+                        <gf:ORDER_QUANTITY>7</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                    <gf:ITEM m="1">
+                        <gf:ORDER_QUANTITY>2</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                    <gf:ITEM m="4">
+                        <gf:ORDER_QUANTITY>9</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-16">
+            <gf:CUSTOMER_ORDERED c="6">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="1">
+                        <gf:ORDER_QUANTITY>10</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-17">
+            <gf:CUSTOMER_ORDERED c="2">
+                <gf:ORDER_STATUS>Cancelled</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="2">
+                        <gf:ORDER_QUANTITY>7</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-18">
+            <gf:CUSTOMER_ORDERED c="5">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="3">
+                        <gf:ORDER_QUANTITY>5</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-19">
+            <gf:CUSTOMER_ORDERED c="4">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="5">
+                        <gf:ORDER_QUANTITY>6</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-20">
+            <gf:CUSTOMER_ORDERED c="7">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="1">
+                        <gf:ORDER_QUANTITY>8</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-21">
+            <gf:CUSTOMER_ORDERED c="1">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="3">
+                        <gf:ORDER_QUANTITY>5</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-22">
+            <gf:CUSTOMER_ORDERED c="3">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="4">
+                        <gf:ORDER_QUANTITY>3</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-23">
+            <gf:CUSTOMER_ORDERED c="6">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="2">
+                        <gf:ORDER_QUANTITY>7</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-24">
+            <gf:CUSTOMER_ORDERED c="2">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="2">
+                        <gf:ORDER_QUANTITY>7</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-25">
+            <gf:CUSTOMER_ORDERED c="5">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="1">
+                        <gf:ORDER_QUANTITY>10</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-26">
+            <gf:CUSTOMER_ORDERED c="4">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="3">
+                        <gf:ORDER_QUANTITY>5</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-27">
+            <gf:CUSTOMER_ORDERED c="7">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="2">
+                        <gf:ORDER_QUANTITY>7</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-28">
+            <gf:CUSTOMER_ORDERED c="1">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="4">
+                        <gf:ORDER_QUANTITY>3</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-29">
+            <gf:CUSTOMER_ORDERED c="3">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="1">
+                        <gf:ORDER_QUANTITY>10</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-30">
+            <gf:CUSTOMER_ORDERED c="6">
+                <gf:ORDER_STATUS>Paondate</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="3">
+                        <gf:ORDER_QUANTITY>5</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-31">
+            <gf:CUSTOMER_ORDERED c="2">
+                <gf:ORDER_STATUS>Paondate</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="5">
+                        <gf:ORDER_QUANTITY>6</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-01">
+            <gf:CUSTOMER_ORDERED c="5">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="4">
+                        <gf:ORDER_QUANTITY>3</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-02">
+            <gf:CUSTOMER_ORDERED c="4">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="3">
+                        <gf:ORDER_QUANTITY>5</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-03">
+            <gf:CUSTOMER_ORDERED c="7">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="2">
+                        <gf:ORDER_QUANTITY>7</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-04">
+            <gf:CUSTOMER_ORDERED c="1">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="1">
+                        <gf:ORDER_QUANTITY>8</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-05">
+            <gf:CUSTOMER_ORDERED c="3">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="2">
+                        <gf:ORDER_QUANTITY>7</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                    <gf:ITEM m="4">
+                        <gf:ORDER_QUANTITY>10</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-06">
+            <gf:CUSTOMER_ORDERED c="6">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="3">
+                        <gf:ORDER_QUANTITY>5</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-07">
+            <gf:CUSTOMER_ORDERED c="2">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="4">
+                        <gf:ORDER_QUANTITY>3</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-08">
+            <gf:CUSTOMER_ORDERED c="5">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="5">
+                        <gf:ORDER_QUANTITY>6</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-09">
+            <gf:CUSTOMER_ORDERED c="4">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="1">
+                        <gf:ORDER_QUANTITY>10</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-10">
+            <gf:CUSTOMER_ORDERED c="7">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="2">
+                        <gf:ORDER_QUANTITY>7</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-1">
+            <gf:CUSTOMER_ORDERED c="1">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="3">
+                        <gf:ORDER_QUANTITY>5</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-12">
+            <gf:CUSTOMER_ORDERED c="3">
+                <gf:ORDER_STATUS>Cancelled</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="4">
+                        <gf:ORDER_QUANTITY>3</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-13">
+            <gf:CUSTOMER_ORDERED c="6">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="5">
+                        <gf:ORDER_QUANTITY>6</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-14">
+            <gf:CUSTOMER_ORDERED c="2">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="1">
+                        <gf:ORDER_QUANTITY>8</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-15">
+            <gf:CUSTOMER_ORDERED c="5">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="3">
+                        <gf:ORDER_QUANTITY>5</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-16">
+            <gf:CUSTOMER_ORDERED c="4">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="2">
+                        <gf:ORDER_QUANTITY>7</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                    <gf:ITEM m="1">
+                        <gf:ORDER_QUANTITY>1</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                    <gf:ITEM m="3">
+                        <gf:ORDER_QUANTITY>5</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                    <gf:ITEM m="4">
+                        <gf:ORDER_QUANTITY>8</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-17">
+            <gf:CUSTOMER_ORDERED c="7">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="2">
+                        <gf:ORDER_QUANTITY>7</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-18">
+            <gf:CUSTOMER_ORDERED c="1">
+                <gf:ORDER_STATUS>Cancelled</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="1">
+                        <gf:ORDER_QUANTITY>10</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+        <gf:ORDER ondate="2023-01-19">
+            <gf:CUSTOMER_ORDERED c="3">
+                <gf:ORDER_STATUS>Ready for delivery</gf:ORDER_STATUS>
+                <gf:ITEMS>
+                    <gf:ITEM m="3">
+                        <gf:ORDER_QUANTITY>5</gf:ORDER_QUANTITY>
+                    </gf:ITEM>
+                </gf:ITEMS>
+            </gf:CUSTOMER_ORDERED>
+        </gf:ORDER>
+    </gf:ORDERS>
+</gf:GOOD_FOOD>

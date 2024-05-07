@@ -1,0 +1,743 @@
+{
+    "@schemaLocation": "http://mynamespace.fr/myvocabulary# ordersToJsonSchema.json",
+    "ORDERS": {
+      "ORDER": [
+        {
+          "@id": "1",
+          "CUSTOMER_ORDERED": {
+            "@c": "3",
+            "ORDER_DATE": "2023-01-01",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": [
+                {
+                  "@m": "2",
+                  "ORDER_QUANTITY": "7"
+                },
+                {
+                  "@m": "5",
+                  "ORDER_QUANTITY": "3"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "@id": "2",
+          "CUSTOMER_ORDERED": {
+            "@c": "1",
+            "ORDER_DATE": "2023-01-02",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "1",
+                "ORDER_QUANTITY": "8"
+              }
+            }
+          }
+        },
+        {
+          "@id": "3",
+          "CUSTOMER_ORDERED": {
+            "@c": "5",
+            "ORDER_DATE": "2023-01-03",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "3",
+                "ORDER_QUANTITY": "5"
+              }
+            }
+          }
+        },
+        {
+          "@id": "4",
+          "CUSTOMER_ORDERED": {
+            "@c": "2",
+            "ORDER_DATE": "2023-01-04",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "2",
+                "ORDER_QUANTITY": "7"
+              }
+            }
+          }
+        },
+        {
+          "@id": "5",
+          "CUSTOMER_ORDERED": {
+            "@c": "4",
+            "ORDER_DATE": "2023-01-05",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "1",
+                "ORDER_QUANTITY": "10"
+              }
+            }
+          }
+        },
+        {
+          "@id": "6",
+          "CUSTOMER_ORDERED": {
+            "@c": "7",
+            "ORDER_DATE": "2023-01-06",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "3",
+                "ORDER_QUANTITY": "4"
+              }
+            }
+          }
+        },
+        {
+          "@id": "7",
+          "CUSTOMER_ORDERED": {
+            "@c": "1",
+            "ORDER_DATE": "2023-01-07",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "4",
+                "ORDER_QUANTITY": "3"
+              }
+            }
+          }
+        },
+        {
+          "@id": "8",
+          "CUSTOMER_ORDERED": {
+            "@c": "3",
+            "ORDER_DATE": "2023-01-08",
+            "ORDER_STATUS": "Cancelled",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "2",
+                "ORDER_QUANTITY": "8"
+              }
+            }
+          }
+        },
+        {
+          "@id": "9",
+          "CUSTOMER_ORDERED": {
+            "@c": "6",
+            "ORDER_DATE": "2023-01-09",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "5",
+                "ORDER_QUANTITY": "6"
+              }
+            }
+          }
+        },
+        {
+          "@id": "10",
+          "CUSTOMER_ORDERED": {
+            "@c": "2",
+            "ORDER_DATE": "2023-01-10",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "2",
+                "ORDER_QUANTITY": "7"
+              }
+            }
+          }
+        },
+        {
+          "@id": "11",
+          "CUSTOMER_ORDERED": {
+            "@c": "5",
+            "ORDER_DATE": "2023-01-11",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "3",
+                "ORDER_QUANTITY": "5"
+              }
+            }
+          }
+        },
+        {
+          "@id": "12",
+          "CUSTOMER_ORDERED": {
+            "@c": "4",
+            "ORDER_DATE": "2023-01-12",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "1",
+                "ORDER_QUANTITY": "8"
+              }
+            }
+          }
+        },
+        {
+          "@id": "13",
+          "CUSTOMER_ORDERED": {
+            "@c": "7",
+            "ORDER_DATE": "2023-01-13",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "3",
+                "ORDER_QUANTITY": "4"
+              }
+            }
+          }
+        },
+        {
+          "@id": "14",
+          "CUSTOMER_ORDERED": {
+            "@c": "1",
+            "ORDER_DATE": "2023-01-14",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "4",
+                "ORDER_QUANTITY": "3"
+              }
+            }
+          }
+        },
+        {
+          "@id": "15",
+          "CUSTOMER_ORDERED": {
+            "@c": "3",
+            "ORDER_DATE": "2023-01-15",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": [
+                {
+                  "@m": "2",
+                  "ORDER_QUANTITY": "7"
+                },
+                {
+                  "@m": "1",
+                  "ORDER_QUANTITY": "2"
+                },
+                {
+                  "@m": "4",
+                  "ORDER_QUANTITY": "9"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "@id": "16",
+          "CUSTOMER_ORDERED": {
+            "@c": "6",
+            "ORDER_DATE": "2023-01-16",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "1",
+                "ORDER_QUANTITY": "10"
+              }
+            }
+          }
+        },
+        {
+          "@id": "17",
+          "CUSTOMER_ORDERED": {
+            "@c": "2",
+            "ORDER_DATE": "2023-01-17",
+            "ORDER_STATUS": "Cancelled",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "2",
+                "ORDER_QUANTITY": "7"
+              }
+            }
+          }
+        },
+        {
+          "@id": "18",
+          "CUSTOMER_ORDERED": {
+            "@c": "5",
+            "ORDER_DATE": "2023-01-18",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "3",
+                "ORDER_QUANTITY": "5"
+              }
+            }
+          }
+        },
+        {
+          "@id": "19",
+          "CUSTOMER_ORDERED": {
+            "@c": "4",
+            "ORDER_DATE": "2023-01-19",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "5",
+                "ORDER_QUANTITY": "6"
+              }
+            }
+          }
+        },
+        {
+          "@id": "20",
+          "CUSTOMER_ORDERED": {
+            "@c": "7",
+            "ORDER_DATE": "2023-01-20",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "1",
+                "ORDER_QUANTITY": "8"
+              }
+            }
+          }
+        },
+        {
+          "@id": "21",
+          "CUSTOMER_ORDERED": {
+            "@c": "1",
+            "ORDER_DATE": "2023-01-21",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "3",
+                "ORDER_QUANTITY": "5"
+              }
+            }
+          }
+        },
+        {
+          "@id": "22",
+          "CUSTOMER_ORDERED": {
+            "@c": "3",
+            "ORDER_DATE": "2023-01-22",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "4",
+                "ORDER_QUANTITY": "3"
+              }
+            }
+          }
+        },
+        {
+          "@id": "23",
+          "CUSTOMER_ORDERED": {
+            "@c": "6",
+            "ORDER_DATE": "2023-01-23",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "2",
+                "ORDER_QUANTITY": "7"
+              }
+            }
+          }
+        },
+        {
+          "@id": "24",
+          "CUSTOMER_ORDERED": {
+            "@c": "2",
+            "ORDER_DATE": "2023-01-24",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "2",
+                "ORDER_QUANTITY": "7"
+              }
+            }
+          }
+        },
+        {
+          "@id": "25",
+          "CUSTOMER_ORDERED": {
+            "@c": "5",
+            "ORDER_DATE": "2023-01-25",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "1",
+                "ORDER_QUANTITY": "10"
+              }
+            }
+          }
+        },
+        {
+          "@id": "26",
+          "CUSTOMER_ORDERED": {
+            "@c": "4",
+            "ORDER_DATE": "2023-01-26",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "3",
+                "ORDER_QUANTITY": "5"
+              }
+            }
+          }
+        },
+        {
+          "@id": "27",
+          "CUSTOMER_ORDERED": {
+            "@c": "7",
+            "ORDER_DATE": "2023-01-27",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "2",
+                "ORDER_QUANTITY": "7"
+              }
+            }
+          }
+        },
+        {
+          "@id": "28",
+          "CUSTOMER_ORDERED": {
+            "@c": "1",
+            "ORDER_DATE": "2023-01-28",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "4",
+                "ORDER_QUANTITY": "3"
+              }
+            }
+          }
+        },
+        {
+          "@id": "29",
+          "CUSTOMER_ORDERED": {
+            "@c": "3",
+            "ORDER_DATE": "2023-01-29",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "1",
+                "ORDER_QUANTITY": "10"
+              }
+            }
+          }
+        },
+        {
+          "@id": "30",
+          "CUSTOMER_ORDERED": {
+            "@c": "6",
+            "ORDER_DATE": "2023-01-30",
+            "ORDER_STATUS": "Paid",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "3",
+                "ORDER_QUANTITY": "5"
+              }
+            }
+          }
+        },
+        {
+          "@id": "31",
+          "CUSTOMER_ORDERED": {
+            "@c": "2",
+            "ORDER_DATE": "2023-01-31",
+            "ORDER_STATUS": "Paid",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "5",
+                "ORDER_QUANTITY": "6"
+              }
+            }
+          }
+        },
+        {
+          "@id": "32",
+          "CUSTOMER_ORDERED": {
+            "@c": "5",
+            "ORDER_DATE": "2023-01-01",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "4",
+                "ORDER_QUANTITY": "3"
+              }
+            }
+          }
+        },
+        {
+          "@id": "33",
+          "CUSTOMER_ORDERED": {
+            "@c": "4",
+            "ORDER_DATE": "2023-01-02",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "3",
+                "ORDER_QUANTITY": "5"
+              }
+            }
+          }
+        },
+        {
+          "@id": "34",
+          "CUSTOMER_ORDERED": {
+            "@c": "7",
+            "ORDER_DATE": "2023-01-03",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "2",
+                "ORDER_QUANTITY": "7"
+              }
+            }
+          }
+        },
+        {
+          "@id": "35",
+          "CUSTOMER_ORDERED": {
+            "@c": "1",
+            "ORDER_DATE": "2023-01-04",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "1",
+                "ORDER_QUANTITY": "8"
+              }
+            }
+          }
+        },
+        {
+          "@id": "36",
+          "CUSTOMER_ORDERED": {
+            "@c": "3",
+            "ORDER_DATE": "2023-01-05",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": [
+                {
+                  "@m": "2",
+                  "ORDER_QUANTITY": "7"
+                },
+                {
+                  "@m": "4",
+                  "ORDER_QUANTITY": "10"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "@id": "37",
+          "CUSTOMER_ORDERED": {
+            "@c": "6",
+            "ORDER_DATE": "2023-01-06",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "3",
+                "ORDER_QUANTITY": "5"
+              }
+            }
+          }
+        },
+        {
+          "@id": "38",
+          "CUSTOMER_ORDERED": {
+            "@c": "2",
+            "ORDER_DATE": "2023-01-07",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "4",
+                "ORDER_QUANTITY": "3"
+              }
+            }
+          }
+        },
+        {
+          "@id": "39",
+          "CUSTOMER_ORDERED": {
+            "@c": "5",
+            "ORDER_DATE": "2023-01-08",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "5",
+                "ORDER_QUANTITY": "6"
+              }
+            }
+          }
+        },
+        {
+          "@id": "40",
+          "CUSTOMER_ORDERED": {
+            "@c": "4",
+            "ORDER_DATE": "2023-01-09",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "1",
+                "ORDER_QUANTITY": "10"
+              }
+            }
+          }
+        },
+        {
+          "@id": "41",
+          "CUSTOMER_ORDERED": {
+            "@c": "7",
+            "ORDER_DATE": "2023-01-10",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "2",
+                "ORDER_QUANTITY": "7"
+              }
+            }
+          }
+        },
+        {
+          "@id": "42",
+          "CUSTOMER_ORDERED": {
+            "@c": "1",
+            "ORDER_DATE": "2023-01-11",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "3",
+                "ORDER_QUANTITY": "5"
+              }
+            }
+          }
+        },
+        {
+          "@id": "43",
+          "CUSTOMER_ORDERED": {
+            "@c": "3",
+            "ORDER_DATE": "2023-01-12",
+            "ORDER_STATUS": "Cancelled",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "4",
+                "ORDER_QUANTITY": "3"
+              }
+            }
+          }
+        },
+        {
+          "@id": "44",
+          "CUSTOMER_ORDERED": {
+            "@c": "6",
+            "ORDER_DATE": "2023-01-13",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "5",
+                "ORDER_QUANTITY": "6"
+              }
+            }
+          }
+        },
+        {
+          "@id": "45",
+          "CUSTOMER_ORDERED": {
+            "@c": "2",
+            "ORDER_DATE": "2023-01-14",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "1",
+                "ORDER_QUANTITY": "8"
+              }
+            }
+          }
+        },
+        {
+          "@id": "46",
+          "CUSTOMER_ORDERED": {
+            "@c": "5",
+            "ORDER_DATE": "2023-01-15",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "3",
+                "ORDER_QUANTITY": "5"
+              }
+            }
+          }
+        },
+        {
+          "@id": "47",
+          "CUSTOMER_ORDERED": {
+            "@c": "4",
+            "ORDER_DATE": "2023-01-16",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": [
+                {
+                  "@m": "2",
+                  "ORDER_QUANTITY": "7"
+                },
+                {
+                  "@m": "1",
+                  "ORDER_QUANTITY": "1"
+                },
+                {
+                  "@m": "3",
+                  "ORDER_QUANTITY": "5"
+                },
+                {
+                  "@m": "4",
+                  "ORDER_QUANTITY": "8"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "@id": "48",
+          "CUSTOMER_ORDERED": {
+            "@c": "7",
+            "ORDER_DATE": "2023-01-17",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "2",
+                "ORDER_QUANTITY": "7"
+              }
+            }
+          }
+        },
+        {
+          "@id": "49",
+          "CUSTOMER_ORDERED": {
+            "@c": "1",
+            "ORDER_DATE": "2023-01-18",
+            "ORDER_STATUS": "Cancelled",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "1",
+                "ORDER_QUANTITY": "10"
+              }
+            }
+          }
+        },
+        {
+          "@id": "50",
+          "CUSTOMER_ORDERED": {
+            "@c": "3",
+            "ORDER_DATE": "2023-01-19",
+            "ORDER_STATUS": "Ready for delivery",
+            "ITEMS": {
+              "ITEM": {
+                "@m": "3",
+                "ORDER_QUANTITY": "5"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
